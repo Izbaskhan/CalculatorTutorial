@@ -24,6 +24,7 @@ int main()
         }
         result = c.Calculate(x, oper, y);
         cout << "Result is: " << result << endl;
+        // Тестовый комментарий
     }
     return 0;
 }
