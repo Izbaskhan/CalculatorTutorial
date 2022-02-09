@@ -12,6 +12,5 @@ int main()
     thread t(hello);
     thread t2(hello);
     t.join();
-    t2.join();
     
 }
