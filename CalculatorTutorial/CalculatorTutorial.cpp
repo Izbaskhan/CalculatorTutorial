@@ -1,16 +1,22 @@
-﻿// CalculatorTutorial.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
-
+﻿
 #include <iostream>
 #include <thread>
 using namespace std;
 void hello() {
-    cout <<  "Hello Concurent World \n";
+	cout << "Hello Concurent World \n";
 }
 int main()
 {
-    thread t(hello);
-    thread t2(hello);
-    t.join();
-    
+	double i = 0;
+	double j = 0;
+	while (true)
+	{
+		i++;
+		if (i > 2 * 1e8) {
+			i = 0;
+			cout << j << "\n";
+			j++;
+		}
+	}
+
 }
